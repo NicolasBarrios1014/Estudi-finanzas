@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+        <!-- BOTONES LATERALES DE CONTRASTE (LADO DERECHO) -->
+    <div id="contraste-buttons">
+        <!-- NUEVO: Botón de texto "Contraste" arriba del - -->
+        <button id="contraste-label" class="contraste-label" disabled>Contraste</button>
+        <button id="contraste-menos" class="contraste-btn" title="Disminuir contraste">−</button>
+        <button id="contraste-mas" class="contraste-btn" title="Aumentar contraste">+</button>
+    </div>
+
+    <!-- ENCABEZADO CON MENÚ -->
+    <header id="main-header">
+        <div class="container">
+            <div id="logo">
+                <h1>Estudi Finanzas</h1>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="/index.html" class="active">Inicio</a></li>
+                    <li><a href="/pages/correcciones.html">Modificación</a></li>
+                    <li><a href="/pages/conceptos.html">Conceptos</a></li>
+                    <li><a href="/pages/librosyplantillas.html">Libros de ayuda</a></li>
+                    <li><a href="/pages/contacto.html">Noticias</a></li>
+                    <!-- NUEVO: Botón CONTACTANOS en el menú -->
+                    <li><a href="/pages/contacto.html">CONTACTANOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+            <!-- ===== PÁGINA 5 ===== -->
+        <section id="pagina5" class="page">
+            <div class="container">
+                <h2 class="page-title">Noticias</h2>
+                
+                <!-- BOTÓN CONTACTANOS (ya no necesario aquí porque está en el menú) -->
+                <!-- ESPACIO PARA IMAGEN 21 -->
+                <div class="image-space" id="img-noticias">
+                    <div class="image-placeholder"><img src="./assest/images/internationals-people-standing-cafe-drinking-coffee.jpg" alt=""class = "imagen-19"></div>
+                </div>
+
+                <!-- SECCIÓN CONTACTO (anclada) -->
+                <div id="contacto" class="contact-section">
+                    <h3 class="contact-title">Dejanos tu mensaje, No se admiten mensajes duplicados</h3>
+                    
+                    <form id="contact-form">
+                        <div class="form-group" id="group-nombre">
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                        </div>
+
+                        <div class="form-group" id="group-email">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com">
+                        </div>
+
+                        <div class="form-group" id="group-telefono">
+                            <label for="telefono">Teléfono (opcional):</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono">
+                        </div>
+
+                        <div class="form-group" id="group-mensaje">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+
+                        <button type="submit" id="btn-enviar">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+</html>
