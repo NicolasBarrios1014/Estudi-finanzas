@@ -788,3 +788,35 @@ body {
     margin-bottom: 0.75rem;
     color: #22C55E;
 }
+
+
+/*--Pagina 4---*/
+.header-libros{
+    text-align: center;
+    background-image: linear-gradient(#c7c7ca 60%, #fafaff),url(/assest/images/book-library-with-open-textbook.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 100px;
+
+}
+.page4-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem;
+}
+.intro4-text{
+
+    font-size: 1.2rem;
+    text-align: center;
+    
+    max-width: 700px;
+    color: white;
+    position: relative;
+}
