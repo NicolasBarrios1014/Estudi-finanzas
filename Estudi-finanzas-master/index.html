@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudi Finanzas - Educación Financiera</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- BOTONES LATERALES DE CONTRASTE (LADO DERECHO) -->
+    <div id="contraste-buttons">
+        <!-- NUEVO: Botón de texto "Contraste" arriba del - -->
+        <button id="contraste-label" class="contraste-label" disabled>Contraste</button>
+        <button id="contraste-menos" class="contraste-btn" title="Disminuir contraste">−</button>
+        <button id="contraste-mas" class="contraste-btn" title="Aumentar contraste">+</button>
+    </div>
+
+    <!-- ENCABEZADO CON MENÚ -->
+    <header id="main-header">
+        <div class="container">
+            <div id="logo">
+                <h1>Estudi Finanzas</h1>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#pagina principal" class="active">Inicio</a></li>
+                    <li><a href="pages/correcciones.html">Modificación</a></li>
+                    <li><a href="pages/conceptos.html">Conceptos</a></li>
+                    <li><a href="pages/librosyplantillas.html">Libros de ayuda</a></li>
+                    <li><a href="pages/contacto.html">Noticias</a></li>
+                    <!-- NUEVO: Botón CONTACTANOS en el menú -->
+                    <li><a href="pages/contacto.html">CONTACTANOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    
+        <!-- ===== PÁGINA 1 ===== -->
+        <section id="pagina principal" class="page">
+            <div class="container">
+                <!-- HERO SECTION -->
+                <div id="hero-section">
+                    <h1 id="hero-title">Somos estudi finanzas buscamos ayudar a jovenes.</h1>
+                    <p id="hero-subtitle">Aprende a manejar y utilizar tus finanzas del mejor modo y con metodos nuevos.</p>
+                    
+                    <div id="hero-buttons">
+                        <a href="#conceptos" class="btn-primary">Empieza gratis</a>
+                        <a href="#Libros de ayuda" class="btn-secondary">ver mas</a>
+                    </div>
+                </div>
+
+                <!-- QUÉ HACEMOS -->
+                <div id="que-hacemos">
+                    <h2>¿Que hacemos?</h2>
+                    <p>Somos un proyecto que busca que los jóvenes aprendan a manejar su dinero desde temprano, sin complicaciones y con herramientas reales.</p>
+                </div>
+
+                <!-- ESPACIO PARA IMAGEN 2 -->
+                <div class="image-space" id="img-pagina principal">
+                    <div class="image-placeholder"><img src="./assest/images/group-people-throwing-money-office.jpg" alt="Imagen2"class = "imagen-2"></div>
+                </div>
+
+                <!-- 4 RECURSOS CON IMÁGENES -->
+                <div id="recursos-grid">
+                    <div class="recurso-card" id="recurso-padre-rico">
+                        <h3>Padre Rico, Padre Pobre</h3>
+                        <p>Diregete aqui</p>
+                        <div class="image-space" id="img-padre-rico">
+                            <div class="image-placeholder small"><img src="./assest/images/81Hs03JAY0L._SL1500_.jpg" alt="Libro1"class = "imagen-3"></div>
+                        </div>
+                    </div>
+                    <div class="recurso-card" id="recurso-invierte">
+                        <h3>Invierte en ti</h3>
+                        <p>Diregete aqui</p>
+                        <div class="image-space" id="img-invierte">
+                            <div class="image-placeholder small"><img src="./assest/images/invierte-en-ti.jpg" alt="Libro2" class = "imagen-4"></div>
+                        </div>
+                    </div>
+                    <div class="recurso-card" id="recurso-control">
+                        <h3>Control de gastos</h3>
+                        <p>Diregete aqui</p>
+                        <div class="image-space" id="img-control">
+                            <div class="image-placeholder small"><img src="./assest/images/canva-documento-a4-plan-de-ahorro-verde-claro-y-rosa-tgQgSTIjoOQ.jpg" alt="PLan1" class = "imagen-5"></div>
+                        </div>
+                    </div>
+                    <div class="recurso-card" id="recurso-plan">
+                        <h3>Plan de ahorro</h3>
+                        <p>Diregete aqui</p>
+                        <div class="image-space" id="img-plan">
+                            <div class="image-placeholder small"><img src="./assest/images/1236w-fpw9jTR-KHA.webp" alt="Plan 2"class = "imagen-6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+
+    <!-- FOOTER SIMPLIFICADO -->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-copyright">
+                    <p>Derechos reservados Estudi Finanzas 2026</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT PARAs CONTRASTE -->
+    <script>
+        // Botones de contraste
+        const btnMenos = document.getElementById('contraste-menos');
+        const btnMas = document.getElementById('contraste-mas');
+        
+        // Seleccionar todos los elementos de texto
+        const elementosTexto = document.querySelectorAll('p, h1, h2, h3, h4, a, li, label, .btn-primary, .btn-secondary, .btn-contact, .page-title, #hero-title, #hero-subtitle, .recurso-card p, .correccion-texto, .concept-block p, .intro-text, .contact-title, .footer-copyright p, .contact-nav-btn');
+        
+        // Valor inicial de opacidad
+        let opacidadActual = 1;
+        
+        function aplicarContraste(valor) {
+            elementosTexto.forEach(elemento => {
+                elemento.style.transition = 'opacity 0.3s ease';
+                elemento.style.opacity = valor;
+            });
+        }
+        
+        btnMenos.addEventListener('click', () => {
+            opacidadActual = Math.max(0.5, opacidadActual - 0.1);
+            aplicarContraste(opacidadActual);
+        });
+        
+        btnMas.addEventListener('click', () => {
+            opacidadActual = Math.min(1, opacidadActual + 0.1);
+            aplicarContraste(opacidadActual);
+        });
+    </script>
+</body>
+</html>
