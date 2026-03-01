@@ -8,20 +8,20 @@
 </head>
 <body>
     <!-- BOTONES LATERALES DE CONTRASTE (LADO DERECHO) -->
-    <div id="contraste-buttons">
+    <div id="contraste-buttons" class="contraste-buttons">
         <!-- NUEVO: Botón de texto "Contraste" arriba del - -->
-        <button id="contraste-boton" class="contraste-boton" disabled>Contraste</button>
-        <button id="contraste-menos" class="contraste-" title="Disminuir contraste">−</button>
-        <button id="contraste-mas" class="contraste+" title="Aumentar contraste">+</button>
-    </div>
+    <button id="contraste-label" class="contraste-label" disabled>Contraste</button>
+    <button id="contraste-menos" class="contraste-btn" title="Disminuir contraste">−</button>
+    <button id="contraste-mas" class="contraste-btn" title="Aumentar contraste">+</button>
+</div>
 
     <!-- ENCABEZADO CON MENÚ -->
-    <header id="main-header">
+    <header id="main-header" class="main-header">
         <div class="container">
             <div id="logo">
                 <h1>Estudi Finanzas</h1>
             </div>
-            <nav id="main-nav">
+            <nav id="main-nav" class="main-nav">
                 <ul>
                     <li><a href="./index.html" class="active">Inicio</a></li>
                     <li><a href="/Estudi-finanzas-master/pages/correcciones.html">Modificación</a></li>
@@ -41,18 +41,18 @@
         <section id="pagina principal" class="page">
             <div class="container">
                 <!-- HERO SECTION -->
-                <div id="hero-section">
+                <div id="hero-section" class="hero-section">
                     <h1 id="hero-title">Somos estudi finanzas buscamos ayudar a jovenes.</h1>
                     <p id="hero-subtitle">Aprende a manejar y utilizar tus finanzas del mejor modo y con metodos nuevos.</p>
                     
-                    <div id="hero-buttons">
+                    <div id="hero-buttons" class="hero-buttons">
                         <a href="#conceptos" class="btn-primary">Empieza gratis</a>
                         <a href="#Libros de ayuda" class="btn-secondary">ver mas</a>
                     </div>
                 </div>
 
                 <!-- QUÉ HACEMOS -->
-                <div id="que-hacemos">
+                <div id="que-hacemos" class="que-hacemos">
                     <h2>¿Que hacemos?</h2>
                     <p>Somos un proyecto que busca que los jóvenes aprendan a manejar su dinero desde temprano, sin complicaciones y con herramientas reales.</p>
                 </div>
@@ -63,44 +63,58 @@
                 </div>
 
                 <!-- 4 RECURSOS CON IMÁGENES -->
-                <div id="recursos-grid">
-                    <div class="recurso-card" id="recurso-padre-rico">
-                        <h3>Padre Rico, Padre Pobre</h3>
-                        <p>Diregete aqui</p>
-                        <div class="image-space" id="img-padre-rico">
-                            <div class="image-placeholder small"><img src="./assest/images/81Hs03JAY0L._SL1500_.jpg" alt="Libro1"class = "imagen-3"></div>
-                        </div>
-                    </div>
-                    <div class="recurso-card" id="recurso-invierte">
-                        <h3>Invierte en ti</h3>
-                        <p>Diregete aqui</p>
-                        <div class="image-space" id="img-invierte">
-                            <div class="image-placeholder small"><img src="./assest/images/invierte-en-ti.jpg" alt="Libro2" class = "imagen-4"></div>
-                        </div>
-                    </div>
-                    <div class="recurso-card" id="recurso-control">
-                        <h3>Control de gastos</h3>
-                        <p>Diregete aqui</p>
-                        <div class="image-space" id="img-control">
-                            <div class="image-placeholder small"><img src="./assest/images/canva-documento-a4-plan-de-ahorro-verde-claro-y-rosa-tgQgSTIjoOQ.jpg" alt="PLan1" class = "imagen-5"></div>
-                        </div>
-                    </div>
-                    <div class="recurso-card" id="recurso-plan">
-                        <h3>Plan de ahorro</h3>
-                        <p>Diregete aqui</p>
-                        <div class="image-space" id="img-plan">
-                            <div class="image-placeholder small"><img src="./assest/images/1236w-fpw9jTR-KHA.webp" alt="Plan 2"class = "imagen-6"></div>
-                        </div>
-                    </div>
-                </div>
+                <div id="recursos-grid" class="recursos-grid">
+    <!-- Padre Rico, Padre Pobre -->
+    <div class="recurso-card" id="recurso-padre-rico">
+        <h3>Padre Rico, Padre Pobre</h3>
+        <div class="image-space" id="img-padre-rico">
+            <div class="image-placeholder small">
+                <img src="./assest/images/81Hs03JAY0L._SL1500_.jpg" alt="Libro Padre Rico" class="imagen-recurso">
             </div>
-        </section>
+        </div>
+        <a href="/Estudi-finanzas-master/pages/librosyplantillas.html" class="recurso-link">Dirigete aquí</a>
+    </div>
+
+    <!-- Invierte en ti -->
+    <div class="recurso-card" id="recurso-invierte">
+        <h3>Invierte en ti</h3>
+        <div class="image-space" id="img-invierte">
+            <div class="image-placeholder small">
+                <img src="./assest/images/invierte-en-ti.jpg" alt="Libro Invierte en ti" class="imagen-recurso">
+            </div>
+        </div>
+        <a href="/Estudi-finanzas-master/pages/librosyplantillas.html" class="recurso-link">Dirigete aquí</a>
+    </div>
+
+    <!-- Control de gastos -->
+    <div class="recurso-card" id="recurso-control">
+        <h3>Control de gastos</h3>
+        <div class="image-space" id="img-control">
+            <div class="image-placeholder small">
+                <img src="./assest/images/canva-documento-a4-plan-de-ahorro-verde-claro-y-rosa-tgQgSTIjoOQ.jpg" alt="Plan Control de gastos" class="imagen-recurso">
+            </div>
+        </div>
+        <a href="/Estudi-finanzas-master/pages/librosyplantillas.html" class="recurso-link">Dirigete aquí</a>
+    </div>
+
+    <!-- Plan de ahorro -->
+    <div class="recurso-card" id="recurso-plan">
+        <h3>Plan de ahorro</h3>
+        <div class="image-space" id="img-plan">
+            <div class="image-placeholder small">
+                <img src="./assest/images/1236w-fpw9jTR-KHA.webp" alt="Plan de ahorro" class="imagen-recurso">
+            </div>
+        </div>
+        <a href="/Estudi-finanzas-master/pages/librosyplantillas.html" class="recurso-link">Dirigete aquí</a>
+    </div>
+</div>
+</section>
 
        
 
 
     <!-- FOOTER SIMPLIFICADO -->
-    <footer id="main-footer">
+    <footer id="main-footer" class="main-footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-copyright">
