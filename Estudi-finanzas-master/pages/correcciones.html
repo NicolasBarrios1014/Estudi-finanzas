@@ -8,7 +8,7 @@
 </head>
 <body>
         <!-- BOTONES LATERALES DE CONTRASTE (LADO DERECHO) -->
-    <div id="contraste-buttons">
+    <div id="contraste-buttons" class="contraste-buttons">
         <!-- NUEVO: Botón de texto "Contraste" arriba del - -->
         <button id="contraste-label" class="contraste-label" disabled>Contraste</button>
         <button id="contraste-menos" class="contraste-btn" title="Disminuir contraste">−</button>
@@ -21,7 +21,7 @@
             <div id="logo">
                 <h1>Estudi Finanzas</h1>
             </div>
-            <nav id="main-nav">
+            <nav id="main-nav" class="main-nav">
                 <ul>
                     <li><a href="./index.html" class="active">Inicio</a></li>
                     <li><a href="/Estudi-finanzas-master/pages/correcciones.html">Modificación</a></li>
@@ -33,6 +33,8 @@
                 </ul>
             </nav>
         </div>
+    </header>
+
      <!-- ===== PÁGINA 2 ===== -->
         <section id="correciones" class="page">
             <div class="container">
@@ -42,15 +44,22 @@
                 <div class="correccion-item" id="correccion-antes">
                     <p class="correccion-texto">Aqui se vizualiza las correciones dichas en la primera presentacion</p>
                     <div class="image-space" id="img-correccion-antes">
-                        <div class="image-placeholder">imagencorrecion1</div>
+                    <div class="image-space" id="img-correccion-despues">
+                    <div id="imagen-antes" class="imagen-antes">
+                     <img src="/Estudi-finanzas-master/assest/images/Correciones/Antes.jpeg" alt="Imagen-1">
+                     <img src="/Estudi-finanzas-master/assest/images/Correciones/Antes 1.jpeg" alt="Imagen-2">
+                </div>
                     </div>
                 </div>
-
+                <h2 class="page-title">Despues</h2>
                 <!-- CORRECCIÓN 2 -->
                 <div class="correccion-item" id="correccion-despues">
                     <p class="correccion-texto">Aqui se vizualiza las correciones dichas en la primera presentacion</p>
                     <div class="image-space" id="img-correccion-despues">
-                        <div class="image-placeholder">iamgencorrecion2</div>
+                    <div id="imagen-despues" class="imagen-despues">
+                     <img src="/Estudi-finanzas-master/assest/images/Correciones/Despues.jpeg" alt="Imagen-1">
+                     <img src="/Estudi-finanzas-master/assest/images/Correciones/Despues 1.jpeg" alt="Imagen-2">
+                </div>
                     </div>
                 </div>
             </div>

@@ -85,7 +85,6 @@ body {
     box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
-
 /* ===== ENCABEZADO CON MENÚ ===== */
 .main-header {
     background: linear-gradient(120deg, #3B82F6 67%, #22C55E 98%);
@@ -530,29 +529,26 @@ body {
     transition: all 0.3s ease;
     width: 150px;
 }
-.imagen-18{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 150px;
+.imagen-antes{
+     display: flex;           
+    gap: 10px;               
+    justify-content: center; 
 }
-.imagen-19{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 500px;
+.contenedor-antes img {
+    width: 100px;            
+    height: auto;
+    border-radius: 10px;
+}
+.imagen-despues {
+     display: flex;           
+    gap: 10px;               
+    justify-content: center; 
+}
+
+.contenedor-despues img {
+    width: 70px;            
+    height: auto;
+    border-radius: 10px;
 }
 .image-placeholder.small {
     padding: 1.5rem;
@@ -739,84 +735,3 @@ body {
     text-align: center;
 }
 
-/* ===== PÁGINA 3 ===== */
-.concept-block {
-    background: white;
-    border-radius: 1.5rem;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-}
-
-.quienes-somos { border-left: 6px solid #3B82F6; }
-.primero-saber { border-left: 6px solid #22C55E; }
-.regla-50-30-20 { border-left: 6px solid #1E3A8A; }
-.piensa-antes-gastar { border-left: 6px solid #F8FAFC; }
-.formas-ahorrar { border-left: 6px solid #3B82F6; }
-
-.concept-block h3 {
-    font-size: 1.8rem;
-    color: #1E3A8A;
-    margin-bottom: 1rem;
-}
-
-.concept-block p {
-    font-size: 1.1rem;
-    color: #0F172A;
-    margin-bottom: 1rem;
-}
-
-.regla-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin: 2rem 0;
-}
-
-.regla-item {
-    background: #f1f5f9;
-    padding: 1.5rem;
-    border-radius: 1rem;
-}
-
-.regla-necesidades { border-top: 4px solid #3B82F6; }
-.regla-deseos { border-top: 4px solid #22C55E; }
-.regla-ahorro { border-top: 4px solid #3B82F6; }
-
-.regla-item h4 {
-    font-size: 1.2rem;
-    margin-bottom: 0.75rem;
-    color: #22C55E;
-}
-
-
-/*--Pagina 4---*/
-.header-libros{
-    text-align: center;
-    background-image: linear-gradient(#c7c7ca 60%, #fafaff),url(/assest/images/book-library-with-open-textbook.jpg);
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 100px;
-
-}
-.page4-title {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 20px;
-    color: white;
-    font-weight: 700;
-    position: relative;
-    padding-bottom: 1rem;
-}
-.intro4-text{
-
-    font-size: 1.2rem;
-    text-align: center;
-    
-    max-width: 700px;
-    color: white;
-    position: relative;
-}

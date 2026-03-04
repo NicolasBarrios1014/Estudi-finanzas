@@ -569,106 +569,35 @@ body {
     border-color: #22C55E;
 }
 
-/* ===== PÁGINA 1 ===== */
-.hero-section {
+/*--Pagina 4---*/
+.header-libros{
     text-align: center;
-    margin-bottom: 1rem;
-    position: relative;
-    
-    background-image:linear-gradient(#7f7b7b 60%,#ebe7e7),url(/assest/images/consulting-with-colleague.jpg);
+    background-image: linear-gradient(#c7c7ca 60%, #fafaff),url(/assest/images/book-library-with-open-textbook.jpg);
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     background-blend-mode: multiply;
-    overflow: hidden;
-    height: 710px;
-}
-
-.hero-title {
-    font-size: 2.8rem;
-    /*color: #294eb1;*/
-    color: #e3dddd;
-    margin-bottom: 1rem;
-    font-weight: 700;
-    line-height: 1.2;
-    padding-top: 100px;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 100px;
 
 }
-
-.hero-subtitle {
-    font-size: 1.2rem;
-    color: #e3dddd;
-    margin-bottom: 2rem;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.hero-buttons {
-    margin-top: 100px;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.btn-primary {
-    background: #22C55E;
-    opacity: 0.6;
-    color: white;
-    padding: 0.9rem 2rem;
-    border-radius: 9999px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.btn-primary:hover {
-    opacity: 1;
-    transform: scale(1.05);
-}
-
-.btn-secondary {
-    background: transparent;
-    color: #0F172A;
-    padding: 0.85rem 2rem;
-    border-radius: 9999px;
-    text-decoration: none;
-    font-weight: 600;
-    border: 2px solid #22C55E;
-    opacity: 0.6;
-    transition: all 0.3s ease;
-}
-
-.btn-secondary:hover {
-    opacity: 1;
-    background: #22C55E;
-    color: white;
-}
-
-.que-hacemos {
+.page4-title {
+    font-size: 3rem;
     text-align: center;
-    margin: 3rem 0;
-    padding: 2rem;
-    background: white;
-    border-radius: 1.5rem;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem;
 }
+.intro4-text{
 
-.que-hacemos h2 {
-    font-size: 2.2rem;
-    color: #1E3A8A;
-    margin-bottom: 1rem;
-}
-
-.que-hacemos p {
-    font-size: 1.2rem;
-    color: #0F172A;
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
     max-width: 800px;
-    margin: 0 auto;
+    color: white;
+    position: relative;
 }
 
 .recursos-grid,
@@ -707,116 +636,68 @@ body {
     font-weight: 500;
 }
 
-/* IDs específicos para cada recurso */
-.btn-enviar { border-top: 4px solid #3B82F6; }
-.recurso-invierte { border-top: 4px solid #22C55E; }
-.recurso-control { border-top: 4px solid #1E3A8A; }
-.recurso-plan { border-top: 4px solid #F8FAFC; }
-
-/* ===== PÁGINA 2 ===== */
-.correccion-1,
-.correccion-2 {
-    background: white;
-    border-radius: 1rem;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+/* ===== IMAGEN (ARRIBA) ===== */
+.image-space {
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
-.correccion-1 {
-    border-left: 6px solid #3B82F6;
+.image-space img {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
-.correccion-2 {
-    border-left: 6px solid #22C55E;
+.image-space img:hover {
+    transform: scale(1.02);
 }
 
-.correccion-texto {
-    font-size: 1.1rem;
-    color: #0F172A;
-    margin-bottom: 1.5rem;
-    font-style: italic;
-    text-align: center;
-}
-
-/* ===== PÁGINA 3 ===== */
-.concept-block {
-    background: white;
-    border-radius: 1.5rem;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-}
-
-.quienes-somos { border-left: 6px solid #3B82F6; }
-.primero-saber { border-left: 6px solid #22C55E; }
-.regla-50-30-20 { border-left: 6px solid #1E3A8A; }
-.piensa-antes-gastar { border-left: 6px solid #F8FAFC; }
-.formas-ahorrar { border-left: 6px solid #3B82F6; }
-
-.concept-block h3 {
-    font-size: 1.8rem;
+/* ===== TÍTULO (EN MEDIO) ===== */
+.recurso-card h3 {
+    font-size: 1.3rem;
     color: #1E3A8A;
-    margin-bottom: 1rem;
+    margin: 0 0 1.5rem 0;
+    font-weight: 600;
+    line-height: 1.4;
+    align-items: center;
 }
 
-.concept-block p {
-    font-size: 1.1rem;
-    color: #0F172A;
-    margin-bottom: 1rem;
-}
-
-.regla-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin: 2rem 0;
-}
-
-.regla-item {
-    background: #f1f5f9;
-    padding: 1.5rem;
-    border-radius: 1rem;
-}
-
-.regla-necesidades { border-top: 4px solid #3B82F6; }
-.regla-deseos { border-top: 4px solid #22C55E; }
-.regla-ahorro { border-top: 4px solid #3B82F6; }
-
-.regla-item h4 {
-    font-size: 1.2rem;
-    margin-bottom: 0.75rem;
+/* ===== ENLACE (ABAJO) ===== */
+.recurso-link {
     color: #22C55E;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #22C55E;
+    border-radius: 30px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    margin-top: auto;        /* Empuja el enlace hacia abajo */
+    align-self: center;      /* Centra el botón */
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
-
-/*--Pagina 4---*/
-.header-libros{
-    text-align: center;
-    background-image: linear-gradient(#c7c7ca 60%, #fafaff),url(/assest/images/book-library-with-open-textbook.jpg);
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 100px;
-
-}
-.page4-title {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 20px;
+.recurso-link:hover {
+    opacity: 1;
+    background: #22C55E;
     color: white;
-    font-weight: 700;
-    position: relative;
-    padding-bottom: 1rem;
+    transform: translateY(-2px);
 }
-.intro4-text{
 
-    font-size: 1.2rem;
-    text-align: center;
-    
-    max-width: 700px;
-    color: white;
-    position: relative;
+.header-libros {
+      flex: 1;                    
+    text-align: center;         
+}
+
+.header-libros img {
+    max-width: 100%;
+    width: 450px;               
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
 }
