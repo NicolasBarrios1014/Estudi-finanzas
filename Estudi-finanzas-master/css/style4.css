@@ -59,12 +59,29 @@ body {
     font-weight: bold;
     cursor: default;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    width: auto;
-    height: auto;
+    width: 50px;
+    height: 50px;
 }
 
 .contraste-btn {
     width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3B82F6 67%, #22C55E 98%);
+    color: #010101;
+    border: 2px solid white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.contraste-btna {
+        width: 50px;
     height: 50px;
     border-radius: 50%;
     background: linear-gradient(135deg, #3B82F6 67%, #22C55E 98%);
@@ -690,7 +707,7 @@ body {
 }
 
 .header-libros {
-      flex: 1;                    
+    flex: 1;                    
     text-align: center;         
 }
 

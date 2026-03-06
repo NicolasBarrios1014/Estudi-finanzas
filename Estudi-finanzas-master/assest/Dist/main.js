@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 (()=>{
     const btnAumentar = document.querySelector("#aumentarfuente");
-    const btnDisminuir = document.querySelector("#Disminuirfuente");
+    const btnDisminuir = document.querySelector("#disminuirfuente");
     const btnContrate = document.querySelector("#contraste");
 
     //Tamaño base de fuente
