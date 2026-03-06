@@ -10,9 +10,9 @@
     <!-- BOTONES LATERALES DE CONTRASTE (LADO DERECHO) -->
     <div id="contraste-buttons" class="contraste-buttons">
         <!-- NUEVO: Botón de texto "Contraste" arriba del - -->
-    <button id="contraste-label" class="contraste-label" disabled>Contraste</button>
-    <button id="contraste-menos" class="contraste-btn" title="Disminuir contraste">−</button>
-    <button id="contraste-mas" class="contraste-btn" title="Aumentar contraste">+</button>
+    <button id="aumentarfuente" class="contraste-btna">+</button>
+    <button id="Disminuirfuente" class="contraste-btn">−</button>
+    <button id="contraste" class="contraste-label">◑</button>
 </div>
 
     <!-- ENCABEZADO CON MENÚ -->
@@ -52,16 +52,18 @@
                 </div>
 
                 <!-- QUÉ HACEMOS -->
-                <div class="container-que-hacemos"></div>
-                <div id="que-hacemos" class="que-hacemos">
+                <section class="que-hacemos" id="que-hacemos">
+                    <article class="que-hacemos-content">
+                        <div class="texto">
+                            <header class="header-que-hacemos">
                     <h2>¿Que hacemos?</h2>
                     <p>Somos un proyecto que busca que los jóvenes aprendan a manejar su dinero desde temprano, sin complicaciones y con herramientas reales.</p>
-                </div>
-
                 <div class="imagen-2" id="img-pagina principal">
-                <img src="./assest/images/Pagina Principal/Que hacemos.jpg" alt="Imagen2"class = "imagen-derecha"></div>
+                <img src="./assest/images/Pagina Principal/Que hacemos.jpg" alt="Imagen2">
                 </div>
-
+                    </article>
+                        </header>
+                </section>
                 <!-- 4 RECURSOS CON IMÁGENES -->
                 <div id="recursos-grid" class="recursos-grid">
     <!-- Padre Rico, Padre Pobre -->
@@ -122,34 +124,7 @@
         </div>
     </footer>
 
-    <!-- JAVASCRIPT PARAs CONTRASTE -->
-    <script>
-        // Botones de contraste
-        const btnMenos = document.getElementById('contraste-menos');
-        const btnMas = document.getElementById('contraste-mas');
-        
-        // Seleccionar todos los elementos de texto
-        const elementosTexto = document.querySelectorAll('p, h1, h2, h3, h4, a, li, label, .btn-primary, .btn-secondary, .btn-contact, .page-title, #hero-title, #hero-subtitle, .recurso-card p, .correccion-texto, .concept-block p, .intro-text, .contact-title, .footer-copyright p, .contact-nav-btn');
-        
-        // Valor inicial de opacidad
-        let opacidadActual = 1;
-        
-        function aplicarContraste(valor) {
-            elementosTexto.forEach(elemento => {
-                elemento.style.transition = 'opacity 0.3s ease';
-                elemento.style.opacity = valor;
-            });
-        }
-        
-        btnMenos.addEventListener('click', () => {
-            opacidadActual = Math.max(0.5, opacidadActual - 0.1);
-            aplicarContraste(opacidadActual);
-        });
-        
-        btnMas.addEventListener('click', () => {
-            opacidadActual = Math.min(1, opacidadActual + 0.1);
-            aplicarContraste(opacidadActual);
-        });
-    </script>
+    <script src="/Estudi-finanzas-master/assest/Dist/main.js"></script>
+    
 </body>
 </html>
