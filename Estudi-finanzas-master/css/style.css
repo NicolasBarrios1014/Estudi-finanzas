@@ -307,8 +307,8 @@ body {
     text-align: center;
     margin-bottom: 1rem;
     position: relative;
-    
-    background-image:linear-gradient(#7f7b7b 60%,#ebe7e7),url(/assest/images/consulting-with-colleague.jpg);
+    padding-top: 150px;
+    background-image:linear-gradient(#7f7b7b 60%,#ebe7e7),url(/Estudi-finanzas-master/assest/images/PaginaPrincipal/Somos\ estudi\ finanza.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
