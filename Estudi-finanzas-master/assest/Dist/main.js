@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //botones de contaste y botones de mas y menos fuente
-
+/*
 (()=>{
     const btnAumentar = document.querySelector("#aumentarfuente");
     const btnDisminuir = document.querySelector("#disminuirfuente");
@@ -100,3 +100,56 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
 })()
+*/
+(() => {
+    const btnAumentar = document.querySelector("#aumentarfuente");
+    const btnDisminuir = document.querySelector("#disminuirfuente");
+    const btnContrate = document.querySelector("#contraste");
+
+    // Tamaño base de fuente
+    let tamañoFuente = 16;
+    let contrasteActivo = false;
+
+    if (btnAumentar && btnDisminuir && btnContrate) {
+        
+        // Botón AUMENTAR fuente (+)
+        btnAumentar.addEventListener("click", () => {
+            if (tamañoFuente < 25) {
+                tamañoFuente += 1;
+                aplicarTamañoFuente(tamañoFuente);
+            }        
+        });
+
+        // Botón DISMINUIR fuente (−)
+        btnDisminuir.addEventListener("click", () => {
+            if (tamañoFuente > 12) {
+                tamañoFuente -= 1;
+                aplicarTamañoFuente(tamañoFuente);
+            }
+        }); 
+    
+        // Botón CONTRASTE (◑)
+        btnContrate.addEventListener("click", () => {
+            contrasteActivo = !contrasteActivo;
+            document.body.classList.toggle("modo-contraste", contrasteActivo);
+        });
+
+        // Función auxiliar para aplicar el tamaño de fuente
+        function aplicarTamañoFuente(tamaño) {
+            // Aplicar al body
+            document.body.style.fontSize = `${tamaño}px`;
+            
+            // Aplicar a los botones de contraste para que mantengan tamaño
+            document.querySelectorAll("#aumentarfuente, #disminuirfuente, #contraste").forEach(btn => {
+                btn.style.fontSize = `${tamaño}px`;
+            });
+            
+            // Aplicar a todos los labels si existen
+            if (document.querySelectorAll("label").length > 0) {
+                document.querySelectorAll("label").forEach(label => {
+                    label.style.fontSize = `${tamaño}px`;
+                });
+            }
+        }
+    }
+})();

@@ -101,6 +101,12 @@ body {
     box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
+.modo-contraste {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: black !important;
+    color: cyan !important;
+}
+
 /* ===== ENCABEZADO CON MENÚ ===== */
 .main-header {
     background: linear-gradient(120deg, #3B82F6 67%, #22C55E 98%);
@@ -278,9 +284,9 @@ body {
     background: #fee2e2;
     padding: 0.75rem;
     border-radius: 9999px;
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto 2rem;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.1rem;
 }
 
@@ -414,261 +420,15 @@ body {
     transform: translateY(-2px);
 }
 
-/* ===== ESPACIOS PARA IMÁGENES ===== */
-.image-space {
-    margin: 3rem 0;
-    width: 100%;
-}
-/*
-.image-placeholder {
-
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-*/
-.imagen-1{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 500px;
-}
-.imagen-2{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 500px;
-}
-.imagen-3{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 150px;
-}
-.imagen-4{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 150px;
-}
-.imagen-5{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 150px;
-}
-.imagen-6{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 150px;
-}
-.imagen-7{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 500px;
-}
-.imagen-8{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 500px;
-}
-.imagen-9{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 500px;
-}
-.imagen-10{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 500px;
-}
-.imagen-11{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 500px;
-}
-.imagen-12{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 500px;
-}
-.imagen-13{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 150px;
-}
-.imagen-14{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 150px;
-}
-.imagen-15{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 150px;
-}
-.imagen-16{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 150px;
-}
-.imagen-17{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 150px;
-}
-.imagen-18{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 150px;
-}
-.imagen-19{
-    background: #e2e8f0;
-    border: 3px dashed #94a3b8;
-    border-radius: 1rem;
-    padding: 3rem 2rem;
-    text-align: center;
-    color: #475569;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    width: 500px;
-}
-.image-placeholder.small {
-    padding: 1.5rem;
-    font-size: 1rem;
-}
-
-.image-placeholder.large {
-    padding: 5rem 2rem;
-    font-size: 1.5rem;
-}
-
-.image-placeholder:hover {
-    background: #cbd5e1;
-    border-color: #22C55E;
+@media (max-width: 900px) {
+    .final {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .final .item {
+        width: 100%;
+        max-width: 400px;
+    }
 }
