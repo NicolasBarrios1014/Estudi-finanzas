@@ -499,7 +499,7 @@ body {
 
 /* ===== ENLACES (AHORA DEBAJO DE LA IMAGEN) ===== */
 .recurso-link {
-    color: #22C55E;
+    color: #000000;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
